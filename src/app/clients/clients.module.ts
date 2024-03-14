@@ -11,4 +11,12 @@ import { ClientsRoutingModule } from './clients-routing.module';
     ClientsRoutingModule
   ]
 })
-export class ClientsModule { }
+export class ClientsModule {
+
+
+  constructor(){
+    console.log("===> ClientsModule instancié");
+
+  }
+
+}

@@ -9,4 +9,11 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ]
 })
-export class UiModule { }
+export class UiModule {
+
+  constructor(){
+    console.log("===> UiModule instancié");
+
+  }
+
+ }

@@ -9,4 +9,12 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ]
 })
-export class TemplatesModule { }
+export class TemplatesModule {
+
+
+  constructor(){
+    console.log("===> TemplatesModule instancié");
+
+  }
+
+}

@@ -7,4 +7,11 @@ const routes: Routes = [];
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class OrdersRoutingModule { }
+export class OrdersRoutingModule {
+  constructor(){
+    console.log("*-*-*-*-> OrdersRoutingModule instancié");
+
+  }
+
+
+}

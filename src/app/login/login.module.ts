@@ -11,4 +11,11 @@ import { LoginRoutingModule } from './login-routing.module';
     LoginRoutingModule
   ]
 })
-export class LoginModule { }
+export class LoginModule {
+
+  constructor(){
+    console.log("===> LoginModule instancié");
+
+  }
+
+}

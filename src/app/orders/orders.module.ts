@@ -11,4 +11,11 @@ import { OrdersRoutingModule } from './orders-routing.module';
     OrdersRoutingModule
   ]
 })
-export class OrdersModule { }
+export class OrdersModule {
+
+  constructor(){
+    console.log("===> OrdersModule instancié");
+
+  }
+
+}

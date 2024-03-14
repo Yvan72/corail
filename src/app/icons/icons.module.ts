@@ -9,4 +9,12 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ]
 })
-export class IconsModule { }
+export class IconsModule {
+
+
+  constructor(){
+    console.log("===> IconsModule instancié");
+
+  }
+
+}

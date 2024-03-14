@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'corail';
+constructor(){
+  console.log("   ---> AppComponent instancié ...")
+}
+
 }
