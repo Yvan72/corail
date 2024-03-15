@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ClientsRoutingModule } from './clients-routing.module';
-
 
 @NgModule({
   declarations: [],
@@ -11,8 +9,8 @@ import { ClientsRoutingModule } from './clients-routing.module';
     ClientsRoutingModule
   ]
 })
-export class ClientsModule {
 
+export class ClientsModule {
 
   constructor(){
     console.log("===> ClientsModule instancié");
