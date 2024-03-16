@@ -7,11 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UiComponent implements OnInit {
 
+  public close: boolean;
   constructor()
   {
+    this.close = false;
     console.log("---> UiComponnent instancié")
   }
 ngOnInit(): void {
     console.log("*** Dans ngOinit de UiComponent")
+  }
+  public toggle(): void {
+    this.close = !this.close;
   }
 }
