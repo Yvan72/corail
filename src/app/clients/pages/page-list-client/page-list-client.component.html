@@ -3,7 +3,7 @@
 
   <!-- <button (click)="changeTitle()">Change title</button> -->
   <!-- <pre>{{ collection | json }}</pre> -->
-
+<app-header-table [headers]="headers">
     <tr *ngFor="let item of collection">
       <td>{{ item.id }}</td>
       <td>{{ item.nom }}</td>
@@ -11,5 +11,5 @@
 
     </tr>
 
-
+  </app-header-table>
 </app-template-full-width>

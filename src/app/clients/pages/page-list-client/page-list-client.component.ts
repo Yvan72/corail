@@ -12,12 +12,19 @@ export class PageListClientComponent implements OnInit  {
 
   public collection$: Observable<Clients[]>;
   public myTitle: string;
+  public headers: string[];
 //
   constructor(private clientsService : PageDeGardeService){
 
     this.collection$ = this.clientsService.collection$;
     this.myTitle= "Clients";
     console.log("************ instanciation de PageListClientComponent ************")
+
+    this.headers = [
+      'ID',
+      'Nom',
+      'Prenom',
+          ];
 
   }
 
