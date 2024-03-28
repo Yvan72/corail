@@ -3,6 +3,18 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', loadChildren: () => import('./clients/clients.module').then((m) => m.ClientsModule)},
+  {
+    path: 'maquette',
+    loadChildren: () =>
+      import('./maquette/maquette.module').then((m) => m.MaquetteModule),
+  },
+  {
+    path: 'gestion-heures',
+    loadChildren:() =>
+    import('./gestion-heures/gestion-heures.module').then((m) => m.GestionHeuresModule),
+  }
+
+
  // { path: '', redirectTo: 'clients', pathMatch: 'full' }
 
 ];
